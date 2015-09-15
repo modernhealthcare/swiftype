@@ -79,11 +79,11 @@ In that same macro, you can conditionally write your meta tags based on the type
 
 > Some example templates from Modern Healthcare's implementation
 
-- [Article.pbo](#)
-- [ArticleHead.pbo](#)
-- [ArticleParagraph.pbo](#)
-- [ArticlePicture.pbo](#)
-- [StaffInfo.pbo](#)
-- [header-default.inc](#)
-- [metadata.pbo](#)
-- [schema.pbo](#)
+- [Article.pbo](https://github.com/modernhealthcare/swiftype/blob/master/templates/objects/Article.pbo)
+- [ArticleHead.pbo](https://github.com/modernhealthcare/swiftype/blob/master/templates/objects/ArticleHead.pbo)
+- [ArticleParagraph.pbo](https://github.com/modernhealthcare/swiftype/blob/master/templates/objects/ArticleParagraph.pbo)
+- [ArticlePicture.pbo](https://github.com/modernhealthcare/swiftype/blob/master/templates/objects/ArticlePicture.pbo)
+- [StaffInfo.pbo](https://github.com/modernhealthcare/swiftype/blob/master/templates/objects/StaffInfo.pbo)
+- [header-default.inc](https://github.com/modernhealthcare/swiftype/blob/master/includes/header-default.inc)
+- [metadata.pbo](https://github.com/modernhealthcare/swiftype/blob/master/templates/macros/metadata.pbo)
+- [schema.pbo](https://github.com/modernhealthcare/swiftype/blob/master/templates/macros/schema.pbo)
