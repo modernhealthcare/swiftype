@@ -1,0 +1,18 @@
+<%BlockID$V(@ch_blockCount)%>
+
+<%Facts$S("articleParagraphBody.php5")%>
+[%<h2><%Heading%></h2>%]
+[%<%Picture%>%]
+<%Body$r("(^.+)href(.+)=1")$V("hrefTyped")%>
+[%{Html=1}
+	<div data-swiftype-name="body" data-swiftype-type="text"><%Body%></div><br><br>
+%|%[%{BlockID="1"|hrefTyped="1"}
+	<div data-swiftype-name="body" data-swiftype-type="text"><%Body$S("articleParagraphBody.php5")%></div><br><br>
+%|%
+	<div data-swiftype-name="body" data-swiftype-type="text"><%Body$a$S("articleParagraphBody.php5")%></div><br><br>
+%]%]
+[%{field_externalURL|field_mediaURL}
+<a href="[%{field_mediaURL}<%field_mediaURL%>%|%<%field_externalURL%>%]">
+	<pbs:macro name="external-url-link" cachetime="1440" cachequalifiers="currcategory">
+</a>
+%]

@@ -1,0 +1,9 @@
+<%ImgLink$V("@artImage")%>
+
+[%{ImgLink}
+  <div class="art-img[%{!MainPicture} <%Align%>%|% main%]">
+	 <img class="pure-img" src="<%ImgLink%>[%{!MainPicture&category=!sponsored|!MainPicture&category=!webinar}[%{!Field_Remove_SoftCrop}&imageversion=thumbnail%]%]&q=40&maxw=600&maxh=600"[%{AltText} alt="<%AltText$t%>"%|% alt="<%Caption$t%>"%]>
+    [%<span><%Caption$S("articlePictureBody.php5")%></span>%]
+    [%<span><%Photo$S("articlePictureBody.php5")%></span>%]
+  </div>
+%]

@@ -1,0 +1,192 @@
+<%currcategory$r("(rankings-[\d|\w]+)$=$1")$V("isRankingsSubPage")%>
+
+[%{@StaffID}
+  <link rel="canonical" href="<%CCIGlobalBaseURI%>/staff/<%@StaffID$l%>">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@modrnhealthcr">
+  <meta name="twitter:creator" content="@modrnhealthcr">
+  <meta name="twitter:title" content="<%@StaffFirstName%> <%@StaffLastName%>, <%@StaffJobTitle%> | ModernHealthcare">
+  <meta name="twitter:description" content="<%@StaffInfo$t%>">
+  [%<meta name="twitter:image" content="<%CCIGlobalBaseURI%><%@StaffImage%>&imageversion=thumbnail&maxw=240&maxh=240">%]
+  <meta name="twitter:domain" content="<%CCIGlobalBaseURI%>">
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="<%@StaffFirstName%> <%@StaffLastName%>, <%@StaffJobTitle%> | ModernHealthcare">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="<%CCIGlobalBaseURI%>/staff/<%@StaffID$l%>">
+  [%<meta property="og:image" content="<%CCIGlobalBaseURI%><%@StaffImage%>&maxw=1200&maxh=1200">%]
+  [%<meta property="og:description" content="<%@StaffInfo$t%>">%]
+  <meta property="og:site_name" content="Modern Healthcare">
+  <!-- Google+ / Schema.org  -->
+  <meta itemprop="name" content="<%@StaffFirstName%> <%@StaffLastName%>, <%@StaffJobTitle%> | ModernHealthcare">
+  <meta itemprop="description" content="<%@StaffInfo$t%>">
+  <meta itemprop="image" content="<%CCIGlobalBaseURI%><%@StaffImage%>&maxw=360&maxh=360">
+  <!-- Swiftype  -->
+  <meta class="swiftype" name="title" data-type="string" content="<%@StaffFirstName%> <%@StaffLastName%>, <%@StaffJobTitle%> | ModernHealthcare">
+  <meta class="swiftype" name="url" data-type="enum" content="<%CCIGlobalBaseURI%>/staff/<%@StaffID$l%>">
+  [%<meta class="swiftype" name="published_at" data-type="date" content="<%Date$d("yyyy-m-d")%>">%]
+  <meta class="swiftype" name="info" data-type="string" content="<%@StaffInfo$t%>">
+  <meta class="swiftype" name="image" data-type="enum" content="<%CCIGlobalBaseURI%><%@StaffImage%>&imageversion=thumbnail&maxw=240&maxh=240">
+%|%[%{currcategory="awards-and-recognition"}
+  <link rel="canonical" href="<%CCIGlobalBaseURI%>/section/awards-and-recognition[%{ID}?module=<%Module%>&id=<%ID%>%]">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@modrnhealthcr">
+  <meta name="twitter:creator" content="@modrnhealthcr">
+  <meta name="twitter:title" content="[%{ID=3203870}100 Most Influential People in Healthcare | %|%[%{ID=3205974}100 Top Hospitals | %|%[%{ID=3203872}50 Most Influential Physician Executives | %|%[%{ID=3203878}Top 25 Minority Executives in Healthcare | %|%[%{ID=3203880}Top 25 Women in Healthcare | %|%[%{ID=3205972}ACHE Awards | %|%[%{ID=3203884}Best Places to Work in Healthcare | %|%[%{ID=3203894}Design Awards | %|%[%{ID=3203910}Excellence in Governance | %|%[%{ID=3203906}Health Care Hall of Fame | %|%[%{ID=3205575}Healthcare Marketing IMPACT Awards | %|%[%{ID=3203912}Up and Comers Award | %]%]%]%]%]%]%]%]%]%]%]%]Healthcare awards and recognition programs from Modern Healthcare">
+  <meta name="twitter:description" content="[%{@arAbout}<%@arAbout%>%|%Healthcare awards and recognition programs from Modern Healthcare%]">
+  <meta name="twitter:image" content="[%{@arImg}<%CCIGlobalBaseURI%><%@arImg%>&imageversion=thumbnail&maxw=240&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <meta name="twitter:domain" content="<%CCIGlobalBaseURI%>">
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="[%{ID=3203870}100 Most Influential People in Healthcare | %|%[%{ID=3205974}100 Top Hospitals | %|%[%{ID=3203872}50 Most Influential Physician Executives | %|%[%{ID=3203878}Top 25 Minority Executives in Healthcare | %|%[%{ID=3203880}Top 25 Women in Healthcare | %|%[%{ID=3205972}ACHE Awards | %|%[%{ID=3203884}Best Places to Work in Healthcare | %|%[%{ID=3203894}Design Awards | %|%[%{ID=3203910}Excellence in Governance | %|%[%{ID=3203906}Health Care Hall of Fame | %|%[%{ID=3205575}Healthcare Marketing IMPACT Awards | %|%[%{ID=3203912}Up and Comers Award | %]%]%]%]%]%]%]%]%]%]%]%]Healthcare awards and recognition programs from Modern Healthcare">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<%CCIGlobalBaseURI%>/section/awards-and-recognition[%{ID}?module=<%Module%>&id=<%ID%>%]">
+  <meta property="og:image" content="[%{@arImg}<%CCIGlobalBaseURI%><%@arImg%>&maxw=1200&maxh=1200%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-fb-lg.jpg%]">
+  <meta property="og:description" content="[%{@arAbout}<%@arAbout%>%|%Healthcare awards and recognition programs from Modern Healthcare%]">
+  <meta property="og:site_name" content="Modern Healthcare">
+  <!-- Google+ / Schema.org  -->
+  <meta itemprop="name" content="[%{@arTitle}<%@arTitle%> | %]Healthcare awards and recognition programs from Modern Healthcare">
+  <meta itemprop="description" content="[%{@arAbout}<%@arAbout%>%|%Healthcare awards and recognition programs from Modern Healthcare%]">
+  <meta itemprop="image" content="[%{@arImg}<%CCIGlobalBaseURI%><%@arImg%>&maxw=360&maxh=360%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-g-plus.jpg%]">
+  <!-- Swiftype  -->
+  <meta class="swiftype" name="title" data-type="string" content="[%{ID=3203870}100 Most Influential People in Healthcare | %|%[%{ID=3205974}100 Top Hospitals | %|%[%{ID=3203872}50 Most Influential Physician Executives | %|%[%{ID=3203878}Top 25 Minority Executives in Healthcare | %|%[%{ID=3203880}Top 25 Women in Healthcare | %|%[%{ID=3205972}ACHE Awards | %|%[%{ID=3203884}Best Places to Work in Healthcare | %|%[%{ID=3203894}Design Awards | %|%[%{ID=3203910}Excellence in Governance | %|%[%{ID=3203906}Health Care Hall of Fame | %|%[%{ID=3205575}Healthcare Marketing IMPACT Awards | %|%[%{ID=3203912}Up and Comers Award | %]%]%]%]%]%]%]%]%]%]%]%]Healthcare awards and recognition programs from Modern Healthcare">
+  <meta class="swiftype" name="url" data-type="enum" content="<%CCIGlobalBaseURI%>/section/awards-and-recognition[%{ID}?module=<%Module%>&id=<%ID%>%]">
+  [%<meta class="swiftype" name="published_at" data-type="date" content="<%Date$d("yyyy-m-d")%>">%]
+  <meta class="swiftype" name="info" data-type="string" content="[%{@arAbout}<%@arAbout%>%|%Healthcare awards and recognition programs from Modern Healthcare%]">
+  <meta class="swiftype" name="image" data-type="enum" content="[%{@dpImg}<%CCIGlobalBaseURI%><%@dpImg%>&imageversion=thumbnail&maxw=240&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+%|%[%{currcategory="data-points"}
+  <link rel="canonical" href="<%CCIGlobalBaseURI%>/section/data-points[%{@dpID}?date=<%@dpDate%>&id=<%@dpID%>&module=<%@dpModule%>%]">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@modrnhealthcr">
+  <meta name="twitter:creator" content="@modrnhealthcr">
+  <meta name="twitter:title" content="Data Points | Modern Healthcare">
+  <meta name="twitter:description" content="[%{@dpSocial}<%@dpSocial%>%|%[%{@dpTitle}<%@dpTitle%>[%{@dpDescription}<%@dpDescription%>%|%<%@dpTagline%>%]%]%]">
+  <meta name="twitter:image" content="[%{@dpImg}<%CCIGlobalBaseURI%><%@dpImg%>&imageversion=thumbnail&maxw=240&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <meta name="twitter:domain" content="<%CCIGlobalBaseURI%>/section/data-points[%{@dpID}?date=<%@dpDate%>&id=<%@dpID%>&module=<%@dpModule%>%]">
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="Data Points | Modern Healthcare">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="<%CCIGlobalBaseURI%>/section/data-points[%{@dpID}?date=<%@dpDate%>&id=<%@dpID%>&module=<%@dpModule%>%]">
+  <meta property="og:image" content="[%{@dpImg}<%CCIGlobalBaseURI%><%@dpImg%>&maxw=1200&maxh=1200%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-fb-lg.jpg%]">
+  <meta property="og:description" content="[%{@dpSocial}<%@dpSocial%>%|%[%{@dpTitle}<%@dpTitle%>[%{@dpDescription}<%@dpDescription%>%|%<%@dpTagline%>%]%]%]">
+  <meta property="og:publisher" content="<%CCIGlobalBaseURI%>">
+  <meta property="og:site_name" content="Modern Healthcare">
+  <!-- Google+ / Schema.org  -->
+  <meta itemprop="name" content="Data Points | Modern Healthcare">
+  <meta itemprop="description" content="[%{@dpSocial}<%@dpSocial%>%|%[%{@dpTitle}<%@dpTitle%>[%{@dpDescription}<%@dpDescription%>%|%<%@dpTagline%>%]%]%]">
+  <meta itemprop="image" content="[%{@dpImg}<%CCIGlobalBaseURI%><%@dpImg%>&maxw=360&maxh=360%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-g-plus.jpg%]">
+  <!-- Swiftype  -->
+  <meta class="swiftype" name="title" data-type="string" content="Data Points | Modern Healthcare">
+  <meta class="swiftype" name="url" data-type="enum" content="<%CCIGlobalBaseURI%>/section/data-points[%{@dpID}?date=<%@dpDate%>&id=<%@dpID%>&module=<%@dpModule%>%]">
+  [%<meta class="swiftype" name="published_at" data-type="date" content="<%Date$d("yyyy-m-d")%>">%]
+  <meta class="swiftype" name="info" data-type="string" content="[%{@dpSocial}<%@dpSocial%>%|%[%{@dpTitle}<%@dpTitle%>[%{@dpDescription}<%@dpDescription%>%|%<%@dpTagline%>%]%]%]">
+  <meta class="swiftype" name="image" data-type="enum" content="[%{@dpImg}<%CCIGlobalBaseURI%><%@dpImg%>&imageversion=thumbnail&maxw=240&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+%|%[%{@photoName|@photoTitle|@photoCaption|@photoImg}
+  <link rel="canonical" href="<%CCIGlobalBaseURI%>/gallery/<%Date%>/<%Category%>/<%ArtNo%>">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@modrnhealthcr">
+  <meta name="twitter:creator" content="@modrnhealthcr">
+  <meta name="twitter:title" content="[%{@photoName}<%@photoName%> - %]<%@photoTitle$t%> - Modern Healthcare">
+  <meta name="twitter:description" content="<%@photoCaption$t%>">
+  <meta name="twitter:image" content="[%{@photoImg}<%CCIGlobalBaseURI%><%@photoImg%>&imageversion=thumbnail&maxw=240&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <meta name="twitter:domain" content="<%CCIGlobalBaseURI%>">
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="[%{@photoName}<%@photoName%> - %]<%@photoTitle$t%> - Modern Healthcare">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="<%CCIGlobalBaseURI%>/gallery/<%Date%>/<%Category%>/<%ArtNo%>">
+  <meta property="og:image" content="[%{@photoImg}<%CCIGlobalBaseURI%><%@photoImg%>&maxw=1200&maxh=630%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  [%<meta property="og:description" content="<%@photoCaption$t%>">%]
+  <meta property="og:site_name" content="Modern Healthcare">
+  <!-- Google+ / Schema.org  -->
+  <meta itemprop="name" content="[%{@photoName}<%@photoName%> - %]<%@photoTitle$t%> - Modern Healthcare">
+  <meta itemprop="description" content="<%@photoCaption$t%>">
+  <meta itemprop="image" content="[%{@photoImg}<%CCIGlobalBaseURI%><%@photoImg%>&maxw=360&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <!-- Swiftype  -->
+  <meta class="swiftype" name="title" data-type="string" content="[%{@photoName}<%@photoName%> - %]<%@photoTitle$t%> - Modern Healthcare">
+  <meta class="swiftype" name="url" data-type="enum" content="<%CCIGlobalBaseURI%>/gallery/<%Date%>/<%Category%>/<%ArtNo%>">
+  [%<meta class="swiftype" name="published_at" data-type="date" content="<%Date$d("yyyy-m-d")%>">%]
+  <meta class="swiftype" name="info" data-type="string" content="<%@photoCaption$t%>">
+  <meta class="swiftype" name="image" data-type="enum" content="[%{@photoImg}<%CCIGlobalBaseURI%><%@photoImg%>&maxw=360&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+%|%[%{@StoryId}
+  <link rel="canonical" href="<%CCIGlobalBaseURI%>/article/<%Date%>/<%Category%>/<%ArtNo%>">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@modrnhealthcr">
+  <meta name="twitter:creator" content="@modrnhealthcr">
+  <meta name="twitter:title" content="[%{@SocialHeadline}<%@SocialHeadline$t$x("\"","&quot;")%>%|%[%{@AlternateHeadline}<%@AlternateHeadline$t%>%|%<%@artTitle$t%>%]%]">
+  <meta name="twitter:description" content="<%@artSummary$t%>">
+  <meta name="twitter:image" content="[%{@artImage}<%CCIGlobalBaseURI%><%@artImage%>&imageversion=thumbnail&maxw=240&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <meta name="twitter:domain" content="<%CCIGlobalBaseURI%>">
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="[%{@SocialHeadline}<%@SocialHeadline$t$x("\"","&quot;")%>%|%[%{@AlternateHeadline}<%@AlternateHeadline$t%>%|%<%@artTitle$t%>%]%]">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="<%CCIGlobalBaseURI%>/article/<%Date%>/<%Category%>/<%ArtNo%>">
+  <meta property="og:image" content="[%{@artImage}<%CCIGlobalBaseURI%><%@artImage%>&maxw=1200&maxh=630%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-fb-lg.jpg%]">
+  [%<meta property="og:description" content="<%@artSummary$t%>">%]
+  <meta property="og:site_name" content="Modern Healthcare">
+  <!-- Google+ / Schema.org  -->
+  <meta itemprop="name" content="[%{@SocialHeadline}<%@SocialHeadline$t$x("\"","&quot;")%>%|%[%{@AlternateHeadline}<%@AlternateHeadline$t%>%|%<%@artTitle$t%>%]%]">
+  <meta itemprop="description" content="<%@artSummary$t%>">
+  <meta itemprop="image" content="[%{@artImage}<%CCIGlobalBaseURI%><%@artImage%>&maxw=360&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-g-plus.jpg%]">
+  <!-- Swiftype  -->
+  <meta class="swiftype" name="title" data-type="string" content="[%{@AlternateHeadline}<%@AlternateHeadline$t%>%|%<%@artTitle$t%>%]">
+  <meta class="swiftype" name="url" data-type="enum" content="<%CCIGlobalBaseURI%>/article/<%Date%>/<%Category%>/<%ArtNo%>">
+  [%<meta class="swiftype" name="published_at" data-type="date" content="<%Date$d("yyyy-m-d")%>">%]
+  <meta class="swiftype" name="image" data-type="enum" content="[%{@artImage}<%CCIGlobalBaseURI%><%@artImage%>&maxw=360&maxh=240%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-g-plus.jpg%]">
+%|%[%{isRankingsSubPage}
+  <link rel="canonical" href="<%CCIGlobalBaseURI%><%@rankingsUrl%>">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@modrnhealthcr">
+  <meta name="twitter:creator" content="@modrnhealthcr">
+  <meta name="twitter:title" content="[%<%@rankingsTitle%> Rankings | Modern Healthcare Research and Data%|%Modern Healthcare | The leader in healthcare business news, research & data%]">
+  <meta name="twitter:description" content="[%<%@rankingsText$t%>%|%The leader in healthcare business news, research & data%]">
+  <meta name="twitter:image" content="[%{@rankingsImage}<%CCIGlobalBaseURI%><%@rankingsImage%>%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <meta name="twitter:domain" content="<%CCIGlobalBaseURI%>">
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="[%<%@rankingsTitle%> Rankings | Modern Healthcare Research and Data%|%Modern Healthcare | The leader in healthcare business news, research & data%]">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content=<%CCIGlobalBaseURI%><%@rankingsUrl%>">
+  <meta property="og:image" content="[%{@rankingsImage}<%CCIGlobalBaseURI%><%@rankingsImage%>%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <meta property="og:description" content="[%<%@rankingsText$t%>%|%The leader in healthcare business news, research & data%]">
+  <meta property="og:site_name" content="Modern Healthcare">
+  <!-- Google+ / Schema.org  -->
+  <meta itemprop="name" content="[%<%@rankingsTitle%> Rankings | Modern Healthcare Research and Data%|%Modern Healthcare | The leader in healthcare business news, research & data%]">
+  <meta itemprop="description" content="[%<%@rankingsText$t%>%|%The leader in healthcare business news, research & data%]">
+  <meta itemprop="image" content="[%{@rankingsImage}<%CCIGlobalBaseURI%><%@rankingsImage%>%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+  <!-- Swiftype  -->
+  <meta class="swiftype" name="title" data-type="string" content="[%<%@rankingsTitle%> Rankings | Modern Healthcare Research and Data%|%Modern Healthcare | The leader in healthcare business news, research & data%]">
+  <meta class="swiftype" name="url" data-type="enum" content="<%CCIGlobalBaseURI%><%@rankingsUrl%>">
+  [%<meta class="swiftype" name="published_at" data-type="date" content="<%Date$d("yyyy-m-d")%>">%]
+  <meta class="swiftype" name="info" data-type="string" content="[%<%@rankingsText$t%>%|%The leader in healthcare business news, research & data%]">
+  <meta class="swiftype" name="image" data-type="enum" content="[%{@rankingsImage}<%CCIGlobalBaseURI%><%@rankingsImage%>%|%https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg%]">
+%|%
+  <link rel="canonical" href="<%CCIGlobalBaseURI%>">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@modrnhealthcr">
+  <meta name="twitter:creator" content="@modrnhealthcr">
+  <meta name="twitter:title" content="Modern Healthcare | The leader in healthcare business news, research & data">
+  <meta name="twitter:description" content="The leader in healthcare business news, research & data">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg">
+  <meta name="twitter:domain" content="<%CCIGlobalBaseURI%>">
+  <!-- Facebook / Open Graph -->
+  <meta property="og:title" content="Modern Healthcare | The leader in healthcare business news, research & data">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<%CCIGlobalBaseURI%>">
+  <meta property="og:image" content="https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-fb-lg.jpg">
+  <meta property="og:description" content="The leader in healthcare business news, research & data">
+  <meta property="og:site_name" content="Modern Healthcare">
+  <!-- Google+ / Schema.org  -->
+  <meta itemprop="name" content="Modern Healthcare | The leader in healthcare business news, research & data">
+  <meta itemprop="description" content="The leader in healthcare business news, research & data">
+  <meta itemprop="image" content="https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-g-plus.jpg">
+  <!-- Swiftype  -->
+  <meta class="swiftype" name="title" data-type="string" content="Modern Healthcare | The leader in healthcare business news, research & data">
+  <meta class="swiftype" name="url" data-type="enum" content="<%CCIGlobalBaseURI%>">
+  [%<meta class="swiftype" name="published_at" data-type="date" content="<%Date$d("yyyy-m-d")%>">%]
+  <meta class="swiftype" name="info" data-type="string" content="<%Summary%>">
+  <meta class="swiftype" name="image" data-type="enum" content="https://raw.githubusercontent.com/modernhealthcare/mh-logo/master/mh-logo-twitter.jpg">
+%]%]%]%]%]%]

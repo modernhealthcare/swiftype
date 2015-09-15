@@ -1,0 +1,27 @@
+<%StaffID$V("@StaffID")%>
+<%Firstname$V("@StaffFirstName")%>
+<%Surname$V("@StaffLastname")%>
+<%JobTitle$V("@StaffJobTitle")%>
+<%imglink$V("@StaffImage")%>
+<%Info$V("@StaffInfo")%>
+
+		<article class="bio-page">
+			[%{imglink}
+			<div class="bio-page-img">
+				<img src="<%imglink%>[%{!Field_Remove_SoftCrop}&imageversion=thumbnail%]&maxw=250&maxh=250&nocache=1" alt="[%<%CaptionBody%>%]">
+			</div>
+			%]
+			<h1 class="bio-page-name"><%Firstname%> <%Surname%></h1>
+			[%<h2 class="bio-page-title"><%JobTitle%></h2>%]
+			<ul class="bio-page-meta">
+				[%<li><a href="mailto:<%Email%>"><%Email%></a></li>%]
+				[%<li>Office: <%PhOffice%></li>%]
+				[%{Field_Twitter}<li class="twitter"><a href="<%Field_Twitter%>" target="_blank">Twitter</a></li>%]
+				[%{Field_Facebook}<li class="facebook"><a href="<%Field_Facebook%>" target="_blank">Facebook</a></li>%]
+				[%{Field_Linkedin}<li class="linkedin"><a href="<%Field_Linkedin%>" target="_blank">LinkedIn</a></li>%]
+				[%{Field_Googleplus}<li class="google-plus"><a href="<%Field_Googleplus%>" target="_blank">Google+</a></li>%]
+			</ul>
+			<div class="cf"></div>
+			[%<p class="bio-info"><%Info%></p>%]
+		</article>
+		<div class="clearfix"></div>

@@ -1,0 +1,10 @@
+<%currentRequest$r("(.*?)/apps/\w+\.dll/(\w+).*=$2")$V(@pageType)%>
+<!-- metdata-story -->
+<!-- built by <%currentRequestUnmodified%> at <%currentDate%> by <%currentURL%> -->
+<!-- @pageType is <%@pageType%> -->
+<title>
+  <pbs:macro name="title-article"><pbs:macro name="title-section">
+</title>
+<meta name="description" content="<pbs:macro name="description-article"><pbs:macro name="description-section">" />
+<pbs:macro name="schema">
+<!-- /metdata -->

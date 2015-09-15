@@ -1,0 +1,144 @@
+<%Keywords$V("@sKeywords")%>
+<%Summary$V("@artSummary")%>
+<%field_Social_Headline$V("@SocialHeadline")%>
+<%field_Alternate_Headline$V("@AlternateHeadline")%>
+<%field_externalURL$V("@mh_externalURL")%>
+
+<div class="pure-u-1 pure-u-md-1-3">
+  <aside class="art-aside">
+    <header class="art-aside-header">
+      [%<%Head%>%]
+      [%{Field_Video_ID|Category=Video}
+      <div class="art-byline">
+        [%<%Byline%>%]
+        [%{Category=Sponsored|Category=Events|Category=Webinar|Category=Promo|Field_Remove_PostDate=1}%|%[%{Byline&ISOPublishedDate}&nbsp;|&nbsp;%]<%ISOPublishedDate$d("mmmm d, yyyy")%>%]
+      </div>
+      <div data-js="video">
+        <!-- Start of Brightcove Player -->
+        <div style="display:none"></div>
+        <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+        <object id="myExperience4138617976001" class="BrightcoveExperience">
+          <param name="bgcolor" value="#FFFFFF" />
+          <param name="width" value="480" />
+          <param name="height" value="270" />
+          <param name="playerID" value="85694573001" />
+          <param name="playerKey" value="AQ~~,AAAAAGA-oEQ~,MTUEQFt81uzG7hJSx7CLrXUJC4arAV_L" />
+          <param name="isVid" value="true" />
+          <param name="isUI" value="true" />
+          <param name="dynamicStreaming" value="true" />
+          <param name="@videoPlayer" value="<%Field_Video_ID%>" />
+        </object>
+        <script type="text/javascript">brightcove.createExperiences();</script>
+        <!-- End of Brightcove Player -->
+      </div>
+      %]
+      [%{field_mediaURL}
+      <audio src="<%field_mediaURL%>" preload="auto" controls></audio>
+      %]
+      [%{!Field_Video_ID|Category!=Video}
+      <div class="art-byline">
+        [%<%Byline%>%]
+        [%{Category=Sponsored|Category=Events|Category=Webinar|Category=Promo|Field_Remove_PostDate=1}%|%[%{Byline&ISOPublishedDate}&nbsp;|&nbsp;%]<%ISOPublishedDate$d("mmmm d, yyyy")%>%]
+      </div>
+      %]
+    </header>
+    [%{Category=Sponsored}<div class="art-sponsored"><h4><a class="slug" href="#">Sponsored</a></h4></div>%]
+    [%{field_Remove_MainImg="1"}%|%[%<%MainPicture%>%]%]
+    [%{!field_no_article_button&field_buttons}
+      <a class="pure-button pure-button-primary" href="[%{field_button_url}<%field_button_url%>%|%<%Field_externalurl%>%]">[%{field_buttons="buy now"}Buy Now%|%[%{field_buttons="get now"}Get Now%|%[%{field_buttons="download"}Download%|%[%{field_buttons="subscribe"}Subscribe%|%[%{field_buttons="register"}Register%|%[%{field_buttons="watch now"}Watch Now%|%[%{field_buttons="purchase"}Purchase%|%[%{field_buttons="learn more"}Learn More%|%[%{field_buttons="vote"}Vote%]%]%]%]%]%]%]%]%]</a>
+    %]
+    [%{Field_Related_Article_1}
+    <div class="pure-g more-buttons">
+      <div class="pure-u-1-2">
+        <div class="more-buttons-inner">
+          <a class="pure-button omnitrack" data-omnilocation="article" data-omnilink="article-toggle-related" data-js="related-touch" href="#">Related</a>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="more-buttons-inner">
+          <a class="pure-button omnitrack" data-omnilocation="article" data-omnilink="article-toggle-share" data-js="share-touch" href="#">Share <span class="icon-share"></span></a>
+        </div>
+      </div>
+    </div>
+    %]
+    <div class="open" data-js="tiny-share-touch">
+      <pbs:macro name="tiny-share-article" artSocialHeadline="<%field_Social_Headline$x(""","\"")$j%>"
+        artAlternateHeadline="<%field_Alternate_Headline$x(""","\"")$j%>" Title="<%@artTitle$x(""","\"")$j%>">
+    </div>
+    [%{Field_Related_Article_1}
+    <div class="related-content">
+      <h4 class="title">Related content</h4>
+      <ul class="related-links">
+        <li><a href="<%Field_Related_Article_Link_1%>" class="omnitrack" data-omnilocation="related-articles-mobile" data-omnilink="related-articles-01"><%Field_Related_Article_1%></a></li>
+        [%{Field_Related_Article_2}<li><a href="<%Field_Related_Article_Link_2%>" class="omnitrack" data-omnilocation="related-articles-mobile" data-omnilink="related-articles-02"><%Field_Related_Article_2%></a></li>%]
+        [%{Field_Related_Article_3}<li><a href="<%Field_Related_Article_Link_3%>" class="omnitrack" data-omnilocation="related-articles-mobile" data-omnilink="related-articles-03"><%Field_Related_Article_3%></a></li>%]
+      </ul>
+    </div>
+    %]
+    [%{Field_Pull_Quote}<blockquote class="pullquote"><%Field_Pull_Quote%></blockquote>%]
+    [%{Field_Attribution}<blockquote class="attribution"><%Field_Attribution%></blockquote>%]
+    [%<%Facts%>%]
+  </aside>
+</div>
+<div class="pure-u-1 pure-u-md-2-3">
+  <header class="art-header">
+    [%<%Head%>%]
+    [%{Field_Video_ID}
+    <div data-js="video">
+      <!-- Start of Brightcove Player -->
+      <div style="display:none"></div>
+      <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+      <object id="myExperience4138617976001" class="BrightcoveExperience">
+        <param name="bgcolor" value="#FFFFFF" />
+        <param name="width" value="480" />
+        <param name="height" value="270" />
+        <param name="playerID" value="85694573001" />
+        <param name="playerKey" value="AQ~~,AAAAAGA-oEQ~,MTUEQFt81uzG7hJSx7CLrXUJC4arAV_L" />
+        <param name="isVid" value="true" />
+        <param name="isUI" value="true" />
+        <param name="dynamicStreaming" value="true" />
+        <param name="@videoPlayer" value="<%Field_Video_ID%>" />
+      </object>
+      <script type="text/javascript">brightcove.createExperiences();</script>
+      <!-- End of Brightcove Player -->
+    </div>
+    %]
+    [%{field_mediaURL}
+    <audio src="<%field_mediaURL%>" preload="auto" controls></audio>
+    %]
+    <div class="art-byline">
+      [%<%Byline%>%]
+      [%{Category=Sponsored|Category=Events|Category=Webinar|Category=Promo|Field_Remove_PostDate="1"}%|%[%{Byline&ISOPublishedDate}&nbsp;|&nbsp;%]<%ISOPublishedDate$d("mmmm d, yyyy")%>%]
+    </div>
+  </header>
+  <pbs:macro name="responsive-slider" cachetime="1440" cachequalifiers="Date,ArtNo">
+  <div class="art-body">
+    [%<%ParagraphItems%>%]
+    <pbs:macro name="reporter-callout" cachequalifiers="@aStaffID,@aStaffID1,@aStaffID2,@aStaffID3,@aStaffID4,@aStaffID5,@aLine1">
+  </div>
+  <footer class="art-footer">
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <%TaxonomyList%>
+      </div>
+      [%{UserCommentsStatus=1}
+      <div class="pure-u-1">
+        <div class="comments" id="comments">
+          <h2 class="comments-title">Comments</h2>
+          <pbs:macro name="cci/saxotech-comments" UserCommentsStatus="<%UserCommentsStatus%>" cci_hasComments="<%UserComments$r("(.*)cci-comments-item(.*)=1")%>" useAjax="1">
+        </div>
+      </div>
+      %]
+    </div>
+  </footer>
+  [%{field_mediaURL}
+  <script>
+    $('audio').audioPlayer({
+      classPrefix: 'audioplayer',
+      strPlay: 'Play',
+      strPause: 'Pause',
+      strVolume: 'Volume'
+    });
+  </script>
+  %]
+</div>

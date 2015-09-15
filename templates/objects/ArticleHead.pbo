@@ -1,0 +1,4 @@
+<%Heading$V("@artTitle")%>
+
+<h1 data-swiftype-name="title" data-swiftype-type="string"><%Heading$t%></h1>
+[%<h2><%Heading2$t%></h2>%]
